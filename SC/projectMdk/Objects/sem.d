@@ -1,0 +1,11 @@
+.\objects\sem.o: ..\CoOS\kernel\sem.c
+.\objects\sem.o: ..\CoOS\kernel\coocox.h
+.\objects\sem.o: ..\CoOS\kernel\CoOS.h
+.\objects\sem.o: ..\CoOS\kernel\OsConfig.h
+.\objects\sem.o: ..\CoOS\portable\OsArch.h
+.\objects\sem.o: ..\CoOS\kernel\OsCore.h
+.\objects\sem.o: ..\CoOS\kernel\OsTask.h
+.\objects\sem.o: ..\CoOS\kernel\OsServiceReq.h
+.\objects\sem.o: ..\CoOS\kernel\OsError.h
+.\objects\sem.o: ..\CoOS\kernel\OsTime.h
+.\objects\sem.o: ..\CoOS\kernel\OsEvent.h

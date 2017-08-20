@@ -1,0 +1,11 @@
+.\objects\servicereq.o: ..\CoOS\kernel\serviceReq.c
+.\objects\servicereq.o: ..\CoOS\kernel\coocox.h
+.\objects\servicereq.o: ..\CoOS\kernel\CoOS.h
+.\objects\servicereq.o: ..\CoOS\kernel\OsConfig.h
+.\objects\servicereq.o: ..\CoOS\portable\OsArch.h
+.\objects\servicereq.o: ..\CoOS\kernel\OsCore.h
+.\objects\servicereq.o: ..\CoOS\kernel\OsTask.h
+.\objects\servicereq.o: ..\CoOS\kernel\OsServiceReq.h
+.\objects\servicereq.o: ..\CoOS\kernel\OsError.h
+.\objects\servicereq.o: ..\CoOS\kernel\OsTime.h
+.\objects\servicereq.o: ..\CoOS\kernel\OsEvent.h

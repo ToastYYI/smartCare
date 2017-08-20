@@ -1,0 +1,11 @@
+.\objects\utility.o: ..\CoOS\kernel\utility.c
+.\objects\utility.o: ..\CoOS\kernel\coocox.h
+.\objects\utility.o: ..\CoOS\kernel\CoOS.h
+.\objects\utility.o: ..\CoOS\kernel\OsConfig.h
+.\objects\utility.o: ..\CoOS\portable\OsArch.h
+.\objects\utility.o: ..\CoOS\kernel\OsCore.h
+.\objects\utility.o: ..\CoOS\kernel\OsTask.h
+.\objects\utility.o: ..\CoOS\kernel\OsServiceReq.h
+.\objects\utility.o: ..\CoOS\kernel\OsError.h
+.\objects\utility.o: ..\CoOS\kernel\OsTime.h
+.\objects\utility.o: ..\CoOS\kernel\OsEvent.h

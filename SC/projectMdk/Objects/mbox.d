@@ -1,0 +1,11 @@
+.\objects\mbox.o: ..\CoOS\kernel\mbox.c
+.\objects\mbox.o: ..\CoOS\kernel\coocox.h
+.\objects\mbox.o: ..\CoOS\kernel\CoOS.h
+.\objects\mbox.o: ..\CoOS\kernel\OsConfig.h
+.\objects\mbox.o: ..\CoOS\portable\OsArch.h
+.\objects\mbox.o: ..\CoOS\kernel\OsCore.h
+.\objects\mbox.o: ..\CoOS\kernel\OsTask.h
+.\objects\mbox.o: ..\CoOS\kernel\OsServiceReq.h
+.\objects\mbox.o: ..\CoOS\kernel\OsError.h
+.\objects\mbox.o: ..\CoOS\kernel\OsTime.h
+.\objects\mbox.o: ..\CoOS\kernel\OsEvent.h

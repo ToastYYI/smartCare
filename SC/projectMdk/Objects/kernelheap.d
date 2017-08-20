@@ -1,0 +1,11 @@
+.\objects\kernelheap.o: ..\CoOS\kernel\kernelHeap.c
+.\objects\kernelheap.o: ..\CoOS\kernel\coocox.h
+.\objects\kernelheap.o: ..\CoOS\kernel\CoOS.h
+.\objects\kernelheap.o: ..\CoOS\kernel\OsConfig.h
+.\objects\kernelheap.o: ..\CoOS\portable\OsArch.h
+.\objects\kernelheap.o: ..\CoOS\kernel\OsCore.h
+.\objects\kernelheap.o: ..\CoOS\kernel\OsTask.h
+.\objects\kernelheap.o: ..\CoOS\kernel\OsServiceReq.h
+.\objects\kernelheap.o: ..\CoOS\kernel\OsError.h
+.\objects\kernelheap.o: ..\CoOS\kernel\OsTime.h
+.\objects\kernelheap.o: ..\CoOS\kernel\OsEvent.h

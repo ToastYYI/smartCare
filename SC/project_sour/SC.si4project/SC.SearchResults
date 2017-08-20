@@ -1,0 +1,1 @@
+---- rbget Matches (3 in 3 files) ----ringbuffer.c (user) line 11 : int rbget(struct ringbuffer *rb)ringbuffer.h (user) line 42 : int rbget(struct ringbuffer *prb);__io_getchar in usart.c (user) : 	ch=rbget(&rb_usart);
