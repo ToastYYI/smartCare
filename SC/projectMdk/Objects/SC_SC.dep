@@ -1,5 +1,5 @@
 Dependencies for Project 'SC', Target 'SC': (DO NOT MODIFY !)
-F (..\user\App.c)(0x5994467A)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
+F (..\user\App.c)(0x599AE57A)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
 I (..\user\sys.h)(0x5982F1EA)
 I (..\startup\stm32f0xx.h)(0x598AD208)
 I (..\startup\core_cm0.h)(0x5940D4F9)
@@ -32,10 +32,11 @@ I (..\lib\inc\stm32f0xx_usart.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_wwdg.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_misc.h)(0x5870F1B4)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
-I (..\user\platform.h)(0x59944517)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
+I (..\user\platform.h)(0x599AE265)
+I (..\user\ringbuf.h)(0x599AE27F)
 F (..\user\adc.c)(0x599444E7)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
-I (..\user\platform.h)(0x59944517)
+I (..\user\platform.h)(0x599AE265)
 I (..\startup\stm32f0xx.h)(0x598AD208)
 I (..\startup\core_cm0.h)(0x5940D4F9)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -66,9 +67,10 @@ I (..\lib\inc\stm32f0xx_tim.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_usart.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_wwdg.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_misc.h)(0x5870F1B4)
+I (..\user\ringbuf.h)(0x599AE27F)
 F (..\user\gpio.c)(0x5994432B)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
-I (..\user\platform.h)(0x59944517)
+I (..\user\platform.h)(0x599AE265)
 I (..\startup\stm32f0xx.h)(0x598AD208)
 I (..\startup\core_cm0.h)(0x5940D4F9)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -99,6 +101,7 @@ I (..\lib\inc\stm32f0xx_tim.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_usart.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_wwdg.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_misc.h)(0x5870F1B4)
+I (..\user\ringbuf.h)(0x599AE27F)
 F (..\user\stm32f0xx_it.c)(0x598C60C8)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f0xx_it.o --omf_browse .\objects\stm32f0xx_it.crf --depend .\objects\stm32f0xx_it.d)
 I (..\startup\stm32f0xx.h)(0x598AD208)
 I (..\startup\core_cm0.h)(0x5940D4F9)
@@ -162,8 +165,8 @@ I (..\lib\inc\stm32f0xx_tim.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_usart.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_wwdg.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_misc.h)(0x5870F1B4)
-F (..\user\usart.c)(0x59990809)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
-I (..\user\platform.h)(0x59944517)
+F (..\user\usart.c)(0x599AE266)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (..\user\platform.h)(0x599AE265)
 I (..\startup\stm32f0xx.h)(0x598AD208)
 I (..\startup\core_cm0.h)(0x5940D4F9)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -194,10 +197,10 @@ I (..\lib\inc\stm32f0xx_tim.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_usart.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_wwdg.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_misc.h)(0x5870F1B4)
+I (..\user\ringbuf.h)(0x599AE27F)
 I (..\user\ringbuffer.h)(0x59945D45)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
-I (..\user\ringbuf.h)(0x59990628)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 F (..\user\wdog.c)(0x5950C026)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\wdog.o --omf_browse .\objects\wdog.crf --depend .\objects\wdog.d)
 I (..\user\wdog.h)(0x5950C061)
 I (..\startup\stm32f0xx.h)(0x598AD208)
@@ -234,7 +237,7 @@ F (..\user\ringbuffer.c)(0x5994341F)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork 
 I (..\user\ringbuffer.h)(0x59945D45)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
 F (..\user\pwm.c)(0x59943A08)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
-I (..\user\platform.h)(0x59944517)
+I (..\user\platform.h)(0x599AE265)
 I (..\startup\stm32f0xx.h)(0x598AD208)
 I (..\startup\core_cm0.h)(0x5940D4F9)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -265,8 +268,9 @@ I (..\lib\inc\stm32f0xx_tim.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_usart.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_wwdg.h)(0x5870F1B4)
 I (..\lib\inc\stm32f0xx_misc.h)(0x5870F1B4)
-F (..\user\ringbuf.c)(0x59990496)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\ringbuf.o --omf_browse .\objects\ringbuf.crf --depend .\objects\ringbuf.d)
-I (..\user\ringbuf.h)(0x59990628)
+I (..\user\ringbuf.h)(0x599AE27F)
+F (..\user\ringbuf.c)(0x599AE3EB)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\ringbuf.o --omf_browse .\objects\ringbuf.crf --depend .\objects\ringbuf.d)
+I (..\user\ringbuf.h)(0x599AE27F)
 I (..\startup\stm32f0xx.h)(0x598AD208)
 I (..\startup\core_cm0.h)(0x5940D4F9)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1045,187 +1049,238 @@ I (..\lib\inc\stm32f0xx_misc.h)(0x5870F1B4)
 F (..\CoOS\kernel\core.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\core.o --omf_browse .\objects\core.crf --depend .\objects\core.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\event.c)(0x4DAE48F4)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\event.o --omf_browse .\objects\event.crf --depend .\objects\event.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
-F (..\CoOS\kernel\flag.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\flag.o --omf_browse .\objects\flag.crf --depend .\objects\flag.d)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
+F (..\CoOS\kernel\flag.c)(0x599ADED0)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\flag.o --omf_browse .\objects\flag.crf --depend .\objects\flag.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\hook.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\hook.o --omf_browse .\objects\hook.crf --depend .\objects\hook.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\kernelHeap.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\kernelheap.o --omf_browse .\objects\kernelheap.crf --depend .\objects\kernelheap.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\mbox.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\mbox.o --omf_browse .\objects\mbox.crf --depend .\objects\mbox.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\mm.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\mm.o --omf_browse .\objects\mm.crf --depend .\objects\mm.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\mutex.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\mutex.o --omf_browse .\objects\mutex.crf --depend .\objects\mutex.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\queue.c)(0x4DAE48F4)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\sem.c)(0x4DAE48F4)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\sem.o --omf_browse .\objects\sem.crf --depend .\objects\sem.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\serviceReq.c)(0x4DAE48F0)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\servicereq.o --omf_browse .\objects\servicereq.crf --depend .\objects\servicereq.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
-F (..\CoOS\kernel\task.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\task.o --omf_browse .\objects\task.crf --depend .\objects\task.d)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
+F (..\CoOS\kernel\task.c)(0x599AE4FE)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\task.o --omf_browse .\objects\task.crf --depend .\objects\task.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\time.c)(0x4DAE48F0)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\time.o --omf_browse .\objects\time.crf --depend .\objects\time.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\timer.c)(0x4DAE48F0)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\kernel\utility.c)(0x4DAE48F0)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\utility.o --omf_browse .\objects\utility.crf --depend .\objects\utility.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\portable\Keil\port.c)(0x4DAE491E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)
 F (..\CoOS\portable\arch.c)(0x4DAE48F2)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I ..\user -I ..\startup -I ..\lib\inc -I ..\CoOS\kernel -I ..\CoOS\portable --C99-IC:\Users\a6735\LHB_DATA\03-project\47-smart-care\smartcare\SC\projectMdk\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F030x6 -DSTM32F030 -DUSE_STDPERIPH_DRIVER-o .\objects\arch.o --omf_browse .\objects\arch.crf --depend .\objects\arch.d)
 I (..\CoOS\kernel\coocox.h)(0x4DAE48F2)
 I (..\CoOS\kernel\CoOS.h)(0x4DAE4BA4)
-I (..\CoOS\kernel\OsConfig.h)(0x4FBF3C73)
+I (..\CoOS\kernel\OsConfig.h)(0x599AE4F4)
 I (..\CoOS\portable\OsArch.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsCore.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTask.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsServiceReq.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsError.h)(0x4DAE48F2)
 I (..\CoOS\kernel\OsTime.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsTimer.h)(0x4DAE48F0)
 I (..\CoOS\kernel\OsEvent.h)(0x4DAE48F2)
+I (..\CoOS\kernel\OsMutex.h)(0x4DAE48F0)
+I (..\CoOS\kernel\OsFlag.h)(0x4DAE48F2)

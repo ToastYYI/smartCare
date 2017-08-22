@@ -2,7 +2,7 @@
 #define platform_h
 
 #include "stm32f0xx.h"
-
+#include "ringbuf.h"
 
 
  /* Left			   NucleoF303RE				   	 Right			

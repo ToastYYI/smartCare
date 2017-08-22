@@ -32,3 +32,4 @@
 .\objects\gpio.o: ..\lib\inc\stm32f0xx_usart.h
 .\objects\gpio.o: ..\lib\inc\stm32f0xx_wwdg.h
 .\objects\gpio.o: ..\lib\inc\stm32f0xx_misc.h
+.\objects\gpio.o: ..\user\ringbuf.h

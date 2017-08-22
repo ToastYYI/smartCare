@@ -34,3 +34,4 @@
 .\objects\app.o: ..\CoOS\kernel\CoOS.h
 .\objects\app.o: ..\CoOS\kernel\OsConfig.h
 .\objects\app.o: ..\user\platform.h
+.\objects\app.o: ..\user\ringbuf.h

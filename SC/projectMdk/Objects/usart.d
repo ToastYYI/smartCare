@@ -31,7 +31,7 @@
 .\objects\usart.o: ..\lib\inc\stm32f0xx_usart.h
 .\objects\usart.o: ..\lib\inc\stm32f0xx_wwdg.h
 .\objects\usart.o: ..\lib\inc\stm32f0xx_misc.h
+.\objects\usart.o: ..\user\ringbuf.h
 .\objects\usart.o: ..\user\ringbuffer.h
 .\objects\usart.o: ..\CoOS\kernel\CoOS.h
 .\objects\usart.o: ..\CoOS\kernel\OsConfig.h
-.\objects\usart.o: ..\user\ringbuf.h

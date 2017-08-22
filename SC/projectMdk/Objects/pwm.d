@@ -31,3 +31,4 @@
 .\objects\pwm.o: ..\lib\inc\stm32f0xx_usart.h
 .\objects\pwm.o: ..\lib\inc\stm32f0xx_wwdg.h
 .\objects\pwm.o: ..\lib\inc\stm32f0xx_misc.h
+.\objects\pwm.o: ..\user\ringbuf.h

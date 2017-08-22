@@ -7,12 +7,30 @@
 /* 私有宏定义 ----------------------------------------------------------------*/
 #define TASK_STK_SIZE		128	 		/*!< Define stack size.*/
 /* 私有变量 ------------------------------------------------------------------*/
-OS_STK   LEDA_Task_Stk[TASK_STK_SIZE];	 	  /*!< Stack of 'LEDA_Task' task. */
-OS_STK   LEDB_Task_Stk[TASK_STK_SIZE];	 	  /*!< Stack of 'LEDB_Task' task. */
+OS_STK   LED_Task_Stk[TASK_STK_SIZE];	 	  /*!< Stack of 'LEDA_Task' task. */
+OS_STK   MOTO_Task_Stk[TASK_STK_SIZE];	 	  /*!< Stack of 'LEDB_Task' task. */
 
+OS_MutexID	mut_uart;	 	
+OS_FlagID Flag_Massage_ID;
 /* 私有函数 ------------------------------------------------------------------*/
-void LEDA_Task (void* pdata);
-void LEDB_Task (void* pdata);
+void LED_Task (void* pdata);
+void MOTO_Task (void* pdata);
+
+/* USART interrupt handler */
+USART_Handler() {
+	#if USECOOS
+	CoEnterISR(); // Enter the interrupt
+	//CoEnterMutexSection(mut_uart);
+	#endif
+	if(USART_GetITStatus(USART,USART_IT_RXNE)==SET){
+		RingbufPut(USART_ReceiveData(USART));
+		CoSetFlag(Flag_Massage_ID);
+	}
+	#if USECOOS
+	//CoLeaveMutexSection(mut_uart); 
+	CoExitISR(); // Enter the interrupt
+	#endif
+}
 
 /***************************************************************************//**
   * @brief  主函数，硬件初始化，实现LED1-LED4闪烁
@@ -29,8 +47,11 @@ int main(void) {
     SYS.SysInitRcc();
 	
     CoInitOS();/*!< Initial CooCox RTOS*/
-    CoCreateTask(LEDA_Task, (void *)0, 10,&LEDA_Task_Stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
-    CoCreateTask(LEDB_Task, (void *)0, 11,&LEDB_Task_Stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
+	
+	Flag_Massage_ID = CoCreateFlag(Co_FALSE,0);	
+	
+    CoCreateTask(LED_Task, (void *)0, 10,&LED_Task_Stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
+    CoCreateTask(MOTO_Task, (void *)0, 11,&MOTO_Task_Stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
     CoStartOS();
     while(1);
 }
@@ -43,7 +64,7 @@ int main(void) {
  * @par     详细描述：
  * @details 创建 任务A，该任务以200ms为周期点亮LED3，实现LED3闪烁。
 *******************************************************************************/
-void LEDA_Task (void* pdata) {
+void LED_Task (void* pdata) {
     //使能LED所在GPIO的时钟
     RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
 	gpio_mode(0,1,0);
@@ -67,7 +88,7 @@ void LEDA_Task (void* pdata) {
  * @par     详细描述：
  * @details 创建 任务B，该任务以400ms为周期点亮LED4，实现LED4闪烁。
 *******************************************************************************/
-void LEDB_Task (void* pdata) {
+void MOTO_Task (void* pdata) {
     //初始化LED
     GPIO_InitTypeDef GPIO_InitStructure;
     //使能LED所在GPIO的时钟
@@ -84,10 +105,17 @@ void LEDB_Task (void* pdata) {
 	usart_mode_init();
 
 	adc_init();
+	
 
 	pwm_init();//pwm init
     for (;;) {
-		CoTickDelay(3000);//wait solw send
+		//CoTickDelay(3000);//wait solw send
+		uint8_t data[8];
+		CoWaitForSingleFlag(Flag_Massage_ID,0);
+		CoClearFlag(Flag_Massage_ID);
+		
+		//RingbufGut(data,1);
+		
 		uint16_t bat = adc_read()*6600/4096;/* 获取值 * (电压范围 1/2分压 扩大 1000倍数 3.3x2x1000) / 2^16  */
 		//to Ble send battery
 		char val[20];

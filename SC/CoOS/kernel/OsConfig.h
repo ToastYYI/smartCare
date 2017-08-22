@@ -104,7 +104,7 @@ support to change task priority while CoOS running.
 Enable(1) or disable(0) CoSetPriority() API.		      
 */
 #if CFG_TASK_SCHEDULE_EN >0
-#define CFG_PRIORITY_SET_EN       (0)	
+#define CFG_PRIORITY_SET_EN       (1)	
 #endif
 
 /*!< 
@@ -169,7 +169,7 @@ Enable(1) or disable(0) TimeDelay() API.
 /*!< 
 Enable(1) or disable(0) timer management.		      
 */
-#define CFG_TMR_EN              (0)		
+#define CFG_TMR_EN              (1)		
 
 /*!< 
 Specify max number timer.(must be less than 32)      
@@ -232,7 +232,7 @@ Enable(1) or disable(0) flag management.
 Max number of flag is 32.					    	  
 */
 #if CFG_TASK_WAITTING_EN > 0
-#define  CFG_FLAG_EN           (0) 
+#define  CFG_FLAG_EN           (1) 
 #endif		
 
 
@@ -242,7 +242,7 @@ Enable(1) or disable(0) mutex management.
 */
 #if CFG_TASK_WAITTING_EN > 0
 #if CFG_TASK_SCHEDULE_EN > 0
-#define  CFG_MUTEX_EN           (0) 
+#define  CFG_MUTEX_EN           (1) 
 #endif
 #endif
 

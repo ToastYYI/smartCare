@@ -1,10 +1,9 @@
 #include "platform.h"
 #include "ringbuffer.h"
 #include <CoOS.h>/*!< CooCox RTOS header file.*/
-#include "ringbuf.h"
 
-//DECLARE_RB(rb_usart,USART_RD_BUF_LEN);
-STDECLARE_RB(rb_usart,500);
+
+
 
 void usart_mode_init(void) {
 	DECLARE_GPIO_INIT(ioIt,AF,PP,UP,3);
@@ -36,19 +35,11 @@ int __io_putchar(int ch) {
 
 int __io_getchar(void) {
 	signed char ch;
-	//while(rbempty(&rb_usart)) continue;
-	//ch=rbget(&rb_usart);
 	return ch;
-//	switch(ch)
-//	{
-//		case '\r':ch='\n';return __io_putchar(ch);
-//		case 0x1b:ch='^'; return __io_putchar(ch);
-//		case 0x08:/* backspace in minicom or putty */
-//		case 0x7F: return ch; /* send backspace or not depend on user app */
-//		default: return __io_putchar(ch);
-//	}
-//	/* echo it */
-//	return __io_putchar(ch);
+}
+
+int __io_getstr(void) {
+	return 0;
 }
 
 int __io_puts(const char *str) {
@@ -60,22 +51,6 @@ int __io_puts(const char *str) {
 	return tmp-str;
 }
 
-/* USART interrupt handler */
-USART_Handler() {
-	#if USECOOS
-	CoEnterISR(); // Enter the interrupt
-	#endif
-//	if(USART_GetITStatus(USART,USART_IT_RXNE)==SET){
-//		rbput(&rb_usart,USART_ReceiveData(USART));
-//	}
-	if((USART->ISR & USART_FLAG_RXNE) == USART_FLAG_RXNE) {
-		uint8_t data = USART->RDR;
-		//rbput(&rb_usart,USART_ReceiveData(USART));
-		rb_usart.put(&rb_usart.ringbuf_n,data);
-	}
-	#if USECOOS
-	CoExitISR(); // Enter the interrupt
-	#endif
-}
+
 
 

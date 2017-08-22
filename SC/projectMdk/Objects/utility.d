@@ -8,4 +8,8 @@
 .\objects\utility.o: ..\CoOS\kernel\OsServiceReq.h
 .\objects\utility.o: ..\CoOS\kernel\OsError.h
 .\objects\utility.o: ..\CoOS\kernel\OsTime.h
+.\objects\utility.o: ..\CoOS\kernel\OsTimer.h
 .\objects\utility.o: ..\CoOS\kernel\OsEvent.h
+.\objects\utility.o: ..\CoOS\kernel\OsMutex.h
+.\objects\utility.o: ..\CoOS\kernel\coocox.h
+.\objects\utility.o: ..\CoOS\kernel\OsFlag.h

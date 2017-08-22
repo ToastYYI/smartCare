@@ -31,3 +31,4 @@
 .\objects\adc.o: ..\lib\inc\stm32f0xx_usart.h
 .\objects\adc.o: ..\lib\inc\stm32f0xx_wwdg.h
 .\objects\adc.o: ..\lib\inc\stm32f0xx_misc.h
+.\objects\adc.o: ..\user\ringbuf.h
