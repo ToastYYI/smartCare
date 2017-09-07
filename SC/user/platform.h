@@ -34,7 +34,7 @@ enum {GPIO_A0=16,GPIO_A1,GPIO_A2,GPIO_A3,GPIO_A4,GPIO_A5};
  
 #define USART USART1
 #define USART_GPIO GPIOA
-#define USART_BAUD 9600
+#define USART_BAUD 115200
 #define USART_RD_BUF_LEN 256
 #define USART_GPIO_AF GPIO_AF_1
 #define USART_RX_PIN GPIO_Pin_2
@@ -97,7 +97,37 @@ uint16_t adc_read(void);
 
 void pwm_init( void );
 
+void MotoInit(void);
+void MotoSleepSet(int left,int right);
 
+unsigned short Crc16(unsigned char *data, int length);
+unsigned char Add16(unsigned char *data, int length);
+
+struct fece_data{
+	uint16_t s_x;//脸的位置
+	uint16_t s_y;
+	uint16_t e_x;
+	uint16_t e_y;
+
+	int sleep_r;//左右轮子的值
+	int sleep_l;
+};
+//		struct mt_data rec_dat;//接收数据
+//		rec_dat.id = 0x02;
+//		for(int k = 0;k < 10;k++) {
+//			rec_dat.data[k] = 0xf1f2f3f4;
+//		}
+//		rec_dat.mt = 0xa5;
+//		rec_dat.check = 0xee;
+//		
+//		x_buf[99] = sizeof(rec_dat);
+//		
+//		int i=0;
+//		for(i=0; i<sizeof(rec_dat);i++) {
+//			USART_SendData(USART,*((unsigned char*)&rec_dat+i));
+//			x_buf[i] = *((unsigned char*)&rec_dat+i);
+//			CoTickDelay (1);
+//		}
 
 /* decalre a GPIO_InitTypeDef valible. named as 'name'
  *  mode can be 'IN' ,'OUT', 'AF', 'AN'

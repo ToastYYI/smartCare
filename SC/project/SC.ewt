@@ -2454,13 +2454,22 @@
     <group>
         <name>user</name>
         <file>
+            <name>$PROJ_DIR$\..\user\adc.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\App.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\flash.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\user\gpio.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\user\led.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\pwm.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\ringbuf.c</name>
@@ -2470,6 +2479,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\sys.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\user\usart.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\user\wdog.c</name>

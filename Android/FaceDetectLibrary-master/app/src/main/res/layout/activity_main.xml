@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kong.qingwei.kqwfacedetectiondemo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/ble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝牙"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/ble_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="搜索蓝牙LHB中..."/>
+
+
+
+        <ImageView
+            android:id="@+id/face1"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:src="@mipmap/cool" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/face2"-->
+            <!--android:layout_width="160dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="10"-->
+            <!--android:src="@mipmap/ic_contact_picture" />-->
+        <Switch
+            android:id="@+id/switch_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否人脸追踪"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <SeekBar
+            android:layout_marginTop="20sp"
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ll">
+
+        <com.kongqw.view.CameraFaceDetectionView
+            android:id="@+id/cameraFaceDetectionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/switch_camera"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@mipmap/cam" />
+
+    </RelativeLayout>
+</RelativeLayout>

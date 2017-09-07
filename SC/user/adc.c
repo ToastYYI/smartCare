@@ -1,4 +1,3 @@
-
 #include "platform.h"
 
 #define ADC1_DR_Address	0x40012440

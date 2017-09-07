@@ -9,6 +9,8 @@
 ".\objects\ringbuffer.o"
 ".\objects\pwm.o"
 ".\objects\ringbuf.o"
+".\objects\stm32_crc.o"
+".\objects\moto.o"
 ".\objects\startup_stm32f030x6.o"
 ".\objects\system_stm32f0xx.o"
 ".\objects\stm32f0xx_adc.o"

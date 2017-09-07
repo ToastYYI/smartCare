@@ -19,30 +19,24 @@ struct pininfo {
 };
 
 const struct pininfo pininfo[]= {
-	{GPIOA,GPIO_Pin_4},
-	{NULL,0},
-	{GPIOA,GPIO_Pin_10},
-	{GPIOB,GPIO_Pin_3},
-	{GPIOB,GPIO_Pin_5},
-	{GPIOB,GPIO_Pin_4},
-	{GPIOB,GPIO_Pin_10},
-	{GPIOA,GPIO_Pin_8},
-/*------------------*/
-	{GPIOA,GPIO_Pin_9},
-	{GPIOC,GPIO_Pin_7},
-	{GPIOB,GPIO_Pin_6},
-	{NULL,0},
-	{NULL,0},
-	{NULL,0},
-	{NULL,0},
-	{NULL,0},
-/*------------------*/
 	{GPIOA,GPIO_Pin_0},
 	{GPIOA,GPIO_Pin_1},
+	{GPIOA,GPIO_Pin_2},
+	{GPIOA,GPIO_Pin_3},
 	{GPIOA,GPIO_Pin_4},
+	{GPIOA,GPIO_Pin_5},
+	{GPIOA,GPIO_Pin_6},
+	{GPIOA,GPIO_Pin_7},
+	{GPIOA,GPIO_Pin_9},
+	{GPIOA,GPIO_Pin_10},
+	{GPIOA,GPIO_Pin_13},
+	{GPIOA,GPIO_Pin_14},
+	/*------------------*/
 	{GPIOB,GPIO_Pin_0},
-	{GPIOC,GPIO_Pin_1},
-	{GPIOC,GPIO_Pin_0},
+	/*------------------*/
+	{GPIOF,GPIO_Pin_0},
+	{GPIOF,GPIO_Pin_1},
+	{GPIOA,0},
 };
 
 #define pin2GPIO(pin) ( pininfo[pin].GPIO )

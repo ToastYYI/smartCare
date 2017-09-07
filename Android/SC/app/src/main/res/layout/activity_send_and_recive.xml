@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_send_and_recive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/wheel_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/wheel"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/zhungtai"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.jt28.a6735.sc.view.RockerView
+        android:id="@+id/my_rocker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        style="@style/MyToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textOff="@null"
+        android:textOn="@null" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送"/>
+
+    <TextView
+        android:id="@+id/mReciveText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textColor="#000000" />
+
+</LinearLayout>
